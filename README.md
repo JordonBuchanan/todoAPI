@@ -16,18 +16,18 @@ In app.js(featured labeled as 'todoMessage')
 
     var newTodo = $('<li class="task">'+todo.name +'<span class="delete">X</span><span class="taskMessage">'+todo.message +'</span>' +'</li>');
 
-> function createTodo(){
-> //send request to create new todo
-> var usrInput = $('#todoInput').val();
-> var usrMessage = $('#todoMessage').val();
-> $.post('/api/todos',{name: usrInput, message: usrMessage})
-> .then(function(newTodo){
->   $('#todoInput').val('');
->  $('#todoMessage').val('');
->   addTodo(newTodo);
-> })
-> .catch(function(err){
->  console.log(err);
-> })
-> }
+    function createTodo(){
+     //send request to create new todo
+     var usrInput = $('#todoInput').val();
+     var usrMessage = $('#todoMessage').val();
+     $.post('/api/todos',{name: usrInput, message: usrMessage})
+      .then(function(newTodo){
+       $('#todoInput').val('');
+       $('#todoMessage').val('');
+      addTodo(newTodo);
+     })
+    .catch(function(err){
+      console.log(err);
+      })
+    }
 
