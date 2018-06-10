@@ -14,7 +14,7 @@ A RESTful Todo API built during my course lessons in Web Development Bootcamp by
 ## The Description Feature
 In app.js(featured labeled as 'todoMessage')
 
->   var newTodo = $('<li class="task">'+todo.name +'<span class="delete">X</span><span class="taskMessage">'+todo.message +'</span>' +'</li>');
+    var newTodo = $('<li class="task">'+todo.name +'<span class="delete">X</span><span class="taskMessage">'+todo.message +'</span>' +'</li>');
 
 > function createTodo(){
 > //send request to create new todo
